@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "tsc --outDir dist --watch --target esnext --module esnext src/main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "tsc": "npm:tsc@^2.0.4"
+  },
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "allowJs": true
+  }
+}

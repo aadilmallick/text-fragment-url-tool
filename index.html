@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Generate URL</h1>
+      <div class="url-input">
+        <label for="url">Paste Url</label>
+        <input type="url" name="url" id="url" />
+      </div>
+      <p id="generated-url"></p>
+      <form>
+        <div class="form-control">
+          <input type="text" name="start" id="start" placeholder="start" />
+          <input type="text" name="end" id="end" placeholder="end" />
+        </div>
+        <button type="submit">Generate Url</button>
+      </form>
+    </div>
+    <script src="dist/main.js" type="module"></script>
+  </body>
+</html>
