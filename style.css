@@ -7,51 +7,58 @@
 body {
   display: grid;
   place-items: center;
-  background: rgb(41, 176, 180);
+  background: #f0f2f5;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
 }
 
 .content {
-  background-color: rgba(245, 245, 245, 0.95);
-  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid hsl(0, 0%, 70%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  width: 90%;
+  max-width: 500px;
 }
 
 h1 {
   margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
 }
 
 form {
   .form-control {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
 
     input {
       flex: 1;
-      padding: 0.5rem;
+      padding: 0.75rem;
       font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
     }
   }
 
   button {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: block;
-    background-color: rgb(41, 176, 180);
+    background-color: #007bff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
     width: 100%;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     font-size: 1.1rem;
     font-weight: 600;
     color: white;
     transition: background-color 0.3s;
     &:hover {
-      background-color: rgb(41, 156, 160);
+      background-color: #0056b3;
     }
   }
 }
@@ -59,22 +66,33 @@ form {
 .url-input {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
   input {
     flex: 1;
-    padding: 0.25rem;
+    padding: 0.75rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
   }
 }
 
 #generated-url {
-  background-color: rgba(41, 156, 160, 0.655);
-  color: white;
+  background-color: #e9ecef;
+  color: #495057;
   text-align: center;
   word-wrap: break-word;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
+  max-width: 100%;
+  cursor: copy;
+  transition: background-color 0.3s;
+  border: 1px dashed #ccc;
+}
+
+#generated-url:hover {
+  background-color: #dce1e6;
 }
