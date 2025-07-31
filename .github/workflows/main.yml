@@ -1,0 +1,26 @@
+on:
+  push:
+  pull_request:
+  workflow_trigger:
+
+jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+  	    # 1. copy repo code into vm
+        - uses: actions/checkout@v4
+        # 2. install node
+        - uses: actions/setup-node@v4
+          with:
+            node-version: 24
+  	    # 3. install dependencies
+        - name: install
+  	      run: npm ci
+  	    # 4. build
+        - name: build
+  	      run: npm run build
+        - name: upload artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: vite-website
+            path: dist
