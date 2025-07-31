@@ -84,10 +84,11 @@ form {
   color: #495057;
   text-align: center;
   word-wrap: break-word;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   padding: 1rem;
+  text-align: center;
   border-radius: 0.5rem;
-  max-width: 100%;
+  max-width: 75ch;
   cursor: copy;
   transition: background-color 0.3s;
   border: 1px dashed #ccc;
